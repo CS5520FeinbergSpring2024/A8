@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedWeatherActivity">
+
+    <!-- Define placeTextView here -->
+    <TextView
+        android:id="@+id/placeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Place Name"
+        android:textSize="20sp" />
+
+    <!-- RecyclerView positioned below placeTextView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/weatherInfoRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeTextView"
+        android:layout_marginTop="8dp" />
+
+
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/placeTextView"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/clothingIconImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/weatherIconImageView"
+        android:layout_marginStart="18dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group Name: Group 28"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter City Name"
+        android:layout_below="@id/tvGroupName"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnFetchWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Weather"
+        android:layout_below="@id/etCityName"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/btnA7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A7"
+        android:layout_below="@id/btnFetchForecast"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnFetchForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Forecast"
+        android:layout_below="@id/btnFetchWeather"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tvWeatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFetchForecast"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:text="@string/loading"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/btnA7"/>
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/btnAbout"/>
+
+
+</RelativeLayout>

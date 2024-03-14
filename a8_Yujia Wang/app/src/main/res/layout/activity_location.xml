@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location:"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewLatitudeLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/textViewLocation"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Distance:"
+        android:layout_below="@id/textViewLatitudeLongitude"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewTotalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/textViewDistance"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnResetDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Distance"
+        android:layout_below="@id/textViewTotalDistance"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
